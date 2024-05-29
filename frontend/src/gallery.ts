@@ -91,6 +91,9 @@ const display =():void=>{
         res => res.json()
     ).then(
         (data: Gallery[]) => {
+            console.log('Fetched data:', data); // Debugging statement
+            galleryData = data; // Update the gallery data
+            displayCards.innerHTML = '';
             data.forEach((art: Gallery) => createCard(art));
          })
          .catch(error => {
@@ -222,16 +225,28 @@ const updateButton = document.querySelector('.update')  as HTMLDivElement
 
 }
 let galleryData: Gallery[] = []
-searchInput.addEventListener('input',()=>{
+
+searchInput.addEventListener('input', () => {
     const searchTerm = searchInput.value.toLowerCase();
-    console.log(searchTerm)
-    const filteredGallery = galleryData.filter(art=>
-        art.title.toLowerCase()||
-        art.description.toLowerCase||
-        art.price.toLowerCase()
-    );
-    console.log(filteredGallery)
+    console.log('Search term:', searchTerm); 
+
+    const filteredGallery = galleryData.filter(art => {
+        const matchesTitle = art.title.toLowerCase().includes(searchTerm);
+        const matchesDescription = art.description.toLowerCase().includes(searchTerm);
+        const matchesPrice = art.price.toLowerCase().includes(searchTerm);
+
+        console.log(`Checking art: ${art.title}`);
+        console.log(`Matches Title: ${matchesTitle}, Matches Description: ${matchesDescription}, Matches Price: ${matchesPrice}`);
+
+        return matchesTitle || matchesDescription || matchesPrice;
+    });
+
+    console.log('Filtered gallery:', filteredGallery); 
+
     displayCards.innerHTML = '';
     filteredGallery.forEach((art: Gallery) => createCard(art));
-})
-display()
+});
+
+
+
+window.addEventListener('load', display);

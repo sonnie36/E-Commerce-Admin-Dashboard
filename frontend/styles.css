@@ -15,13 +15,15 @@ body p{
 }
 .nav{
     background-color:#0C0C0C;
+    position: fixed;
+    top: 0;
+    left: 0;
     display:flex;
     flex-direction: column;
     align-items: center;
     padding:15px;
     width:20%;
     height:100vh;
-    margin: 0 auto;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     /* border-radius-right-top: 30px; */
@@ -85,7 +87,7 @@ body p{
 .products{
     width:60%;
     height: 100vh;
-    /* background-color: white; */
+    margin-left: 20%;
     border-radius: 20px;
     padding: 10px;
     
@@ -97,10 +99,12 @@ body p{
     color:whitesmoke;
     justify-content: space-between;
     align-items: center;
-    width:100%;
+    width:59%;
     height: 60px;
     margin-bottom: 20px;
     border-radius: 15px;
+    position: absolute;
+    top: 0px;
 }
 .input{
     border:none;
@@ -193,13 +197,15 @@ p{
     justify-content: center;
     background-color: #0C0C0C;
     color:whitesmoke;
-    height:100vh;
+    height:80vh;
     border-radius: 20px;
+    height: calc(100vh - 60px); 
+    overflow-y: auto;
+    
 }
 .card{
     display:flex;
     flex-direction: column;
-    /* background-color: #322C2B; */
     gap:10px;
     width:200px;
     height:250px;
@@ -213,13 +219,15 @@ p{
 }
 .clickedCard{
     border: 1px solid rgb(200,200,200);
-    /* background-color:rgb(200,200,200); */
 }
 .card p{
     font-size: 14px;
 }
 .artCard{
     display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
     flex-direction: column;
     width:20%;
     height: 100vh;
@@ -244,7 +252,7 @@ p{
     align-items: center;
 }
 .imageView{
-    width:250px;
+    width:80%;
     height:150px;
     border-radius:20px;
 }
@@ -279,7 +287,9 @@ p{
     width:300px;
     height:auto;
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
-    background-color: #e9cae9;
+    background-color: 
+    #322C2B;
+    color:whitesmoke;
     padding:30px;
     position: absolute;
     top:30%;
@@ -303,6 +313,7 @@ p{
     gap:10px;
     justify-content: space-between;
     width: 100%;
+    margin-top: 60px;
     /* background-color: #0C0C0C;
     color:whitesmoke */
 }
@@ -325,3 +336,9 @@ p{
     color:whitesmoke;
     margin-top: 15px;
 }
+/* Add this at the end of your CSS file */
+
+.hamburger {
+    display: none; /* Hide hamburger icon by default */
+}
+

@@ -1,0 +1,25 @@
+{
+  "gallery": [
+    {
+      "imageURL": "https://i.pinimg.com/564x/bc/18/38/bc1838b1699f08e3aa7ab9a47267ea98.jpg",
+      "title": "Scenary",
+      "description": "View of sunflower field k",
+      "price": "$120",
+      "id": "be16"
+    },
+    {
+      "id": "cf32",
+      "imageURL": "https://i.pinimg.com/564x/53/95/d0/5395d0588ebb653cd757f52794a3815b.jpg",
+      "title": "Solitude Art",
+      "description": "Person walking down the road alone",
+      "price": "$100"
+    },
+    {
+      "id": "86d1",
+      "imageURL": "https://i.pinimg.com/564x/af/83/06/af8306841432396957fb9f0c55f27a36.jpg",
+      "title": "Jack Sparrow",
+      "description": "Pen and Ink drawing of Jack Sparrow",
+      "price": "$200"
+    }
+  ]
+}
