@@ -77,8 +77,8 @@ const display = () => {
             'Content-Type': 'application/json'
         },
     }).then(res => res.json()).then((data) => {
-        console.log('Fetched data:', data); // Debugging statement
-        galleryData = data; // Update the gallery data
+        console.log('Fetched data:', data);
+        galleryData = data;
         displayCards.innerHTML = '';
         data.forEach((art) => createCard(art));
     })

@@ -1,4 +1,3 @@
-/* Ensure your base styles remain unchanged */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,7 @@ body p {
     font-size: 12px;
 }
 
-/* The navigation bar on the left */
+
 .nav {
     background-color: #0C0C0C;
     position: fixed;
@@ -106,10 +105,10 @@ body p {
     height: 60px;
     margin-bottom: 20px;
     border-radius: 15px;
-    position: fixed; /* Fix the position */
+    position: fixed; 
     top: 0;
-    left: 20%; /* Adjust left position */
-    z-index: 10; /* Ensure it appears on top */
+    left: 20%; 
+    z-index: 10; 
     box-shadow:  0px 5px 10px 0px rgba(255, 255, 255, 0.2);
 }
 .input {
@@ -201,9 +200,7 @@ p {
     background-color: #0C0C0C;
     color: whitesmoke;
     border-radius: 20px;
-    /* height: auto; */
     height: calc(100vh - 70px); 
-    /* overflow-y: auto; */
     padding-top: 10px; 
     
 }

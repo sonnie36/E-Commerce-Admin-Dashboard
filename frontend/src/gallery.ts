@@ -91,8 +91,8 @@ const display =():void=>{
         res => res.json()
     ).then(
         (data: Gallery[]) => {
-            console.log('Fetched data:', data); // Debugging statement
-            galleryData = data; // Update the gallery data
+            console.log('Fetched data:', data); 
+            galleryData = data; 
             displayCards.innerHTML = '';
             data.forEach((art: Gallery) => createCard(art));
          })
