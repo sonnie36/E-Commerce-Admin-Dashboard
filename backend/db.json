@@ -15,18 +15,11 @@
       "price": "$100"
     },
     {
-      "id": "86d1",
       "imageURL": "https://i.pinimg.com/564x/af/83/06/af8306841432396957fb9f0c55f27a36.jpg",
       "title": "Jack Sparrow",
       "description": "Pen and Ink drawing of Jack Sparrow",
-      "price": "$200"
-    },
-    {
-      "id": "0667",
-      "imageURL": "https://i.pinimg.com/736x/6a/9a/b9/6a9ab9369b315ec0dffc101590f8ce06.jpg",
-      "title": "Dog with a stick",
-      "description": "sketch of a dog holding onto a large stick",
-      "price": "$70"
+      "price": "$150",
+      "id": "86d1"
     },
     {
       "id": "728c",
@@ -43,24 +36,10 @@
       "price": "$30"
     },
     {
-      "id": "7bda",
-      "imageURL": "https://i.pinimg.com/736x/1c/0f/07/1c0f0756512fe3addb4f52be24313b39.jpg",
-      "title": "Sun Painting",
-      "description": "Every Step Has it's direction",
-      "price": "$250"
-    },
-    {
-      "id": "e477",
-      "imageURL": "https://i.pinimg.com/564x/82/16/1f/82161fa4a0924806c1869653be51557d.jpg",
-      "title": "Artz Now",
-      "description": "lorem Ipsum Dollar",
-      "price": "$400"
-    },
-    {
-      "id": "4d28",
-      "imageURL": "https://i.pinimg.com/564x/90/e0/3a/90e03ae7008a5a06d479822525468328.jpg",
+      "id": "c4a0",
+      "imageURL": "https://i.pinimg.com/564x/a4/09/01/a4090149640305e81ca3b4a4c036665a.jpg",
       "title": "Lorem",
-      "description": "lorem Ipsum Dollar",
+      "description": "Pen and Ink drawing",
       "price": "$100"
     }
   ]

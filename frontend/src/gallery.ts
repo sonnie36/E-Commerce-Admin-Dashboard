@@ -130,8 +130,7 @@ const createCard=(art: Gallery):void=>{
                 </div>
                 <p class="desc">Description</p>
                 <div class="border">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Cursus sit amet dictum sit amet justo donec enim. Id eu nisl nunc mi ipsum</p>
+                <p>${art.description}</p>
                  </div>
             </div>
             <h5>Category</h5>
