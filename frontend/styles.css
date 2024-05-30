@@ -1,214 +1,215 @@
-*{
-    margin:0;
-    padding:0;
+/* Ensure your base styles remain unchanged */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    background-color:#322C2B;
+    background-color: #322C2B;
     width: 100%;
     height: 100vh;
-    overflow:hidden ;
+    overflow: hidden;
 }
-body p{
-    font-size:12px;
+body p {
+    font-size: 12px;
 }
-.nav{
-    background-color:#0C0C0C;
+
+/* The navigation bar on the left */
+.nav {
+    background-color: #0C0C0C;
     position: fixed;
     top: 0;
     left: 0;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding:15px;
-    width:20%;
-    height:100vh;
+    padding: 15px;
+    width: 20%;
+    height: 100vh;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    /* border-radius-right-top: 30px; */
     color: whitesmoke;
 }
-.logo{
-    display:flex;
-    gap:10px;
+
+.logo {
+    display: flex;
+    gap: 10px;
     margin-top: 15px;
 }
-.logo p{
+.logo p {
     font-size: 1.3rem;
     font-weight: bold;
 }
-.logoIcon{
+.logoIcon {
     color: magenta;
     width: 30px;
     height: 30px;
-
 }
-.divIcon{
+.divIcon {
     display: flex;
-    gap:25px;
+    gap: 25px;
     margin-top: 15px;
-
 }
-.nav-links{
+.nav-links {
     margin-bottom: 90%;
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
     margin-top: 30px;
 }
-
-.icon{
-    color:magenta;
-    width:20px;
-    height:20px;
+.icon {
+    color: magenta;
+    width: 20px;
+    height: 20px;
 }
-.gallery{
-    font-weight:bold;
+.gallery {
+    font-weight: bold;
 }
-.profile{
+.profile {
     display: flex;
-    gap:10px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
-.pic{
-    width:40px;
+.pic {
+    width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: lightgray;
 }
-.main{
+
+/* Main content area */
+.main {
     display: flex;
-    width:100%;
+    width: 100%;
     margin: 0 auto;
-    gap:15px;
+    gap: 15px;
 }
-.products{
-    width:60%;
+.products {
+    width: 60%;
     height: 100vh;
     margin-left: 20%;
     border-radius: 20px;
     padding: 10px;
-    
+    padding-top: 30px; 
 }
-.productNav{
-    display:flex;
+.productNav {
+    display: flex;
     padding: 10px 20px;
-    background-color:#0C0C0C;
-    color:whitesmoke;
+    background-color: #0C0C0C;
+    color: whitesmoke;
     justify-content: space-between;
     align-items: center;
-    width:59%;
+    width: 60%;
     height: 60px;
     margin-bottom: 20px;
     border-radius: 15px;
-    position: absolute;
-    top: 0px;
+    position: fixed; /* Fix the position */
+    top: 0;
+    left: 20%; /* Adjust left position */
+    z-index: 10; /* Ensure it appears on top */
 }
-.input{
-    border:none;
+.input {
+    border: none;
     outline: none;
     background-color: whitesmoke;
-    padding:10px;
-    width:85%;
-    color: rgb(100,100,100);
-    border-radius:15px ;
-    padding-right:30px;
+    padding: 10px;
+    width: 85%;
+    color: rgb(100, 100, 100);
+    border-radius: 15px;
+    padding-right: 30px;
     padding-left: 15px;
 }
-p{
+p {
     font: 15px;
 }
-.add,.viewL{
-    border:1px solid #322C2B;
+.add,
+.viewL {
+    border: 1px solid #322C2B;
     background-color: white;
-    padding:10px;
-    border-radius:15px;
+    padding: 10px;
+    border-radius: 15px;
 }
-.add{
+.add {
     margin-left: 20px;
 }
-.search{
-    position:relative;
+.search {
+    position: relative;
 }
-.search-icon{
+.search-icon {
     position: absolute;
     top: 50%;
-    right:40px; 
+    right: 40px;
     transform: translateY(-50%);
     pointer-events: none;
     color: black;
 }
-.addProduct{
-    position:relative;
+.addProduct {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.formDiv{
-    display:flex;
-    /* align-items: center; */
-    flex-direction:column;
-    gap:5px;
-    width:300px;
-    height:auto;
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    height: auto;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
     background-color: #322C2B;
-    color:whitesmoke;
-    padding:30px;
+    color: whitesmoke;
+    padding: 30px;
     position: absolute;
-    top:0;
+    top: 0;
     margin-top: 50px;
-    right:30px;
+    right: 30px;
     z-index: 5;
     border-radius: 10px;
 }
-
-.inputField{
-    border:none;
+.inputField {
+    border: none;
     outline: none;
-    width:100;
-    padding:10px;
+    width: 100%;
+    padding: 10px;
 }
-.cross{
-    position:absolute;
-    top:10px;
-    left:22px;
-
+.cross {
+    position: absolute;
+    top: 10px;
+    left: 22px;
 }
-.upload{
-    border:none;
+.upload,.submitUpdate {
+    border: none;
     background-color: whitesmoke;
     color: black;
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;
 }
-.image{
-    width:100px;
-    height:100px;
-
+.image {
+    width: 100px;
+    height: 100px;
 }
-.displayCards{
+.displayCards {
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
+    gap: 10px;
     justify-content: center;
     background-color: #0C0C0C;
-    color:whitesmoke;
-    height:80vh;
+    color: whitesmoke;
     border-radius: 20px;
-    height: calc(100vh - 60px); 
+    height: calc(100vh - 70px); /* Adjust height */
     overflow-y: auto;
+    padding-top: 10px; /* Optional: Add padding */
     
 }
-.card{
-    display:flex;
+.card {
+    display: flex;
     flex-direction: column;
-    gap:10px;
-    width:200px;
-    height:250px;
+    gap: 10px;
+    width: 200px;
+    height: 250px;
     border-radius: 20px;
     padding: 10px;
     justify-content: center;
@@ -217,128 +218,124 @@ p{
     margin-top: 20px;
     color: whitesmoke;
 }
-.clickedCard{
-    border: 1px solid rgb(200,200,200);
+.clickedCard {
+    border: 1px solid rgb(200, 200, 200);
 }
-.card p{
+.card p {
     font-size: 14px;
 }
-.artCard{
+.artCard {
     display: flex;
     position: fixed;
     top: 0;
     right: 0;
     flex-direction: column;
-    width:20%;
+    width: 20%;
     height: 100vh;
     border-radius: 20px;
-    padding:20px;
+    padding: 20px;
     background-color: #0C0C0C;
-    color:whitesmoke;
+    color: whitesmoke;
 }
-.edit{
+.edit {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.full{
-    border:none;
+
+.full {
+    border: none;
     outline: none;
     background-color: transparent;
 }
-.editView{
+.editView {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.imageView{
-    width:80%;
-    height:150px;
-    border-radius:20px;
+.imageView {
+    width: 80%;
+    height: 150px;
+    border-radius: 20px;
 }
-.view{
+.view {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    gap:10px;
+    gap: 10px;
 }
-.Delete,.update{
+.Delete,
+.update {
     border: 1px solid #322C2B;
     outline: none;
-    padding:10px;
+    padding: 10px;
     border-radius: 10px;
     background-color: white;
 }
-.Delete:hover{
+.Delete:hover {
     background: magenta;
-    color:white;
+    color: white;
 }
-.update:hover{
+.update:hover {
     background: magenta;
-    color:white;
+    color: white;
 }
-.updateForm{
-    display:flex;
-    /* align-items: center; */
-    flex-direction:column;
-    gap:5px;
-    width:300px;
-    height:auto;
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
-    background-color: 
-    #322C2B;
-    color:whitesmoke;
-    padding:30px;
+.updateForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    height: auto;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    background-color: #322C2B;
+    color: whitesmoke;
+    padding: 30px;
     position: absolute;
-    top:30%;
-    right:400px;
+    top: 30%;
+    right: 400px;
     z-index: 5;
     border-radius: 10px;
 }
-.productName{
-    padding:10px;
+.productName {
+    padding: 10px;
 }
-.border{
-   border: 1px solid #e9cae9;
-   border-radius: 15px;
-   padding:10px;
+.border {
+    border: 1px solid #e9cae9;
+    border-radius: 15px;
+    padding: 10px;
 }
-.desc{
+.desc {
     margin-top: 10px;
 }
-.analytics{
+.analytics {
     display: flex;
-    gap:10px;
+    gap: 10px;
     justify-content: space-between;
     width: 100%;
     margin-top: 60px;
-    /* background-color: #0C0C0C;
-    color:whitesmoke */
 }
-.sales{
-    width:300px;
-    height:100px;
-    padding:10px;
+.sales {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
     border-radius: 10px;
     background-color: #0C0C0C;
     color: whitesmoke;
     margin-bottom: 20px;
     padding-left: 20px;
-    /* box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1); */
 }
-.color1{
-    width:55px;
+.color1 {
+    width: 55px;
     padding: 5px;
     background-color: rgba(15, 247, 15, 0.3);
-    border-radius:5px;
-    color:whitesmoke;
+    border-radius: 5px;
+    color: whitesmoke;
     margin-top: 15px;
 }
-/* Add this at the end of your CSS file */
 
+/* Add this at the end of your CSS file */
 .hamburger {
     display: none; /* Hide hamburger icon by default */
 }
-
