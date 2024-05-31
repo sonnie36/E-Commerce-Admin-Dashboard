@@ -45,16 +45,20 @@
   ],
   "cart": [
     {
-      "id": "be16"
+      "id": "728c",
+      "quantity": 1
     },
     {
-      "id": "be16"
+      "id": "cf32",
+      "quantity": 1
     },
     {
-      "id": "be16"
+      "id": "728c",
+      "quantity": 1
     },
     {
-      "id": "cf32"
+      "id": "be16",
+      "quantity": 1
     }
   ]
 }

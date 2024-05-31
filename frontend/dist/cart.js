@@ -43,10 +43,13 @@ const displayCartItems = () => {
                           </div>
                       </div>
                   `;
-                itemsContainer.appendChild(itemDiv);
+                return itemDiv;
             });
         });
-        Promise.all(fetchPromises).then(() => {
+        Promise.all(fetchPromises).then((itemDivs) => {
+            itemDivs.forEach(itemDiv => {
+                itemsContainer.appendChild(itemDiv);
+            });
             const subTotalDiv = document.querySelector('.subTotal .price');
             subTotalDiv.innerHTML = `<h5>$${total.toFixed(2)}</h5>`;
             document.querySelectorAll('.amount').forEach(input => {

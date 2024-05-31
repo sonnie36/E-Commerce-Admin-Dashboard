@@ -58,16 +58,16 @@ const displayCartItems = (): void => {
                           </div>
                       </div>
                   `;
-                  itemsContainer.appendChild(itemDiv);
+                  return itemDiv;
               });
           });
 
-          Promise.all(fetchPromises).then(() => {
-
+          Promise.all(fetchPromises).then((itemDivs) => {
+              itemDivs.forEach(itemDiv => {
+                  itemsContainer.appendChild(itemDiv);
+              });
               const subTotalDiv = document.querySelector('.subTotal .price') as HTMLDivElement;
               subTotalDiv.innerHTML = `<h5>$${total.toFixed(2)}</h5>`;
-
-              
               document.querySelectorAll('.amount').forEach(input => {
                   input.addEventListener('change', (event) => {
                       const target = event.target as HTMLInputElement;
@@ -95,7 +95,7 @@ const updateCartItemQuantity = (id: string, quantity: number): void => {
     }).then(res => res.json())
       .then(data => {
           console.log('Cart item updated:', data);
-          displayCartItems();
+          displayCartItems(); 
       }).catch(error => console.error('Error updating cart item:', error));
 };
 
