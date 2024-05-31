@@ -76,3 +76,7 @@ p {
     flex-wrap: wrap;
     gap:15px;
 }
+.cartIcon{
+    width:30px;
+    height:30px;
+}

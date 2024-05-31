@@ -4,9 +4,12 @@
     box-sizing: border-box;
 }
 .logo {
+    width:100%;
     display: flex;
     gap: 10px;
-    margin-top: 15px;
+    padding: 15px;
+    background-color: #0C0C0C;
+    margin-bottom: 20px;
 }
 .logo p {
     font-size: 1.3rem;
@@ -35,6 +38,9 @@ body p {
 .cart{
     width:60%;
     background-color: #0C0C0C;
+    margin-top: 20px;
+    margin:0 auto;
+    border-radius: 15px;
 }
 .items{
     padding:30px;
@@ -75,6 +81,10 @@ body p {
     position:absolute;
     top:25%;
     left:23%;
+}
+.shopping{
+    text-align: center;
+    padding-top: 15px;
 }
 .btns{
     display: flex;
