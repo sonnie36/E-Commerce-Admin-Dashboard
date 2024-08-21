@@ -264,6 +264,7 @@ p {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    margin-left: 15%;
     gap: 10px;
 }
 .Delete,
